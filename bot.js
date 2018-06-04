@@ -186,7 +186,7 @@ bot.on("guildCreate", guild => {
 
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
 
-  bot.user.setActivity(`bit.ly/VexeronBot | !help`);
+  bot.user.setActivity(`bit.ly/solohdyt | !help`);
 
 });
 

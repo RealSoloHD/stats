@@ -107,16 +107,16 @@ module.exports = {
             .addField("!player <ID>", "Display informations about player <ID>")
             .addField("!top <max>", "Display top <max> players of clan (from 0 to 25)")
             .addField("!chest <ID>", "Display next chests incoming for player <ID>")
-            .addField("!invite", "Invite Bandit to your server!")
-            .addField("!Solo", "For help and updates!")
             .addField("!battle", "Who is ready to duel!?")
             .addField("!say <message>", "Says whatever you tell the bot to say!")
             .addField("!purge <number of messages to delete>", "Delete messages in bulk!")
             .addField("!kick <@player>", "Kicks the designated player!")
             .addField("!ban <@player>", "Bans the designated player!")
             .addField("!ping", "pong!")
-            .addField("Need help or want to check out the discord server?", "bit.ly/VexeronBot")
-            .addField("Want to check out the Bot Developers YouTube Channel?", "bit.ly/solohdyt")
+            .setDescription('Here are some helpful links and the official Bandit Discord server!')
+            .addField("Need help or want to check out the discord server?", "http://bit.ly/BanditDiscord")
+            .addField("!invite", "Invite Bandit to your server!")
+            .addField("Want to check out the Bot Developers YouTube Channel?", "http://bit.ly/solohdyt")
         return message.channel.send({
             embed
         });

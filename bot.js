@@ -17,9 +17,7 @@ let request = axios.create({
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
-    client.user.setActivity("Solo HD", {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/realsolohd"
+    bot.user.setPresence({ game: { name: 'with depression', type: "streaming", url: "https://www.twitch.tv/monstercat"}}); 
 });
 
 

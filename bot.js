@@ -17,8 +17,11 @@ let request = axios.create({
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
-    bot.user.setActivity(`bit.ly/solohdyt | !help`);
+    client.user.setActivity("Solo HD", {
+  type: "STREAMING",
+  url: "https://www.twitch.tv/realsolohd"
 });
+
 
 
 bot.on('message', message => {
@@ -135,8 +138,7 @@ let chestIDs = [
     "epic-chest",
     "legendary-chest",
     "lightning-chest",
-    "fortune-chest",
-    "kings-chest"
+    "fortune-chest",    "kings-chest"
 ];
 
 bot.login(conf.token);
@@ -164,43 +166,7 @@ const config = require("./config.json");
 
 
 
-bot.on("ready", () => {
 
-  // This event will run if the bot starts, and logs in, successfully.
-
-  console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-
-  // Example of changing the bot's playing game to something useful. `client.user` is what the
-
-  // docs refer to as the "ClientUser".
-
-  bot.user.setActivity(`bit.ly/solohdyt | !help`);
-
-});
-
-
-
-bot.on("guildCreate", guild => {
-
-  // This event triggers when the bot joins a guild.
-
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-
-  bot.user.setActivity(`bit.ly/solohdyt | !help`);
-
-});
-
-
-
-bot.on("guildDelete", guild => {
-
-  // this event triggers when the bot is removed from a guild.
-
-  console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
-
-  bot.user.setActivity(`bit.ly/solohdyt | !help`);
-
-});
 
 
 
